@@ -6,7 +6,7 @@ subtitle: PhD Candidate at Radboud University Nijmegen.
 
 profile:
   align: right
-  image: Portrait.jpg
+  image: portrait.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p>Mercator 1</p>
