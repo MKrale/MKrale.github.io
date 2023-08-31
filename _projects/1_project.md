@@ -13,8 +13,9 @@ Or how often a drone should use it's battery-draining GPS-system to keep an accu
 
 All these questions can be formulated as *active measure* problems, or AM problems for short, in which agents need to determine whether the value of taking a measurement is worth it's cost.
 Problems that contain partial observability, as is the case here, are often modeled as *partially observable Markov decision processes* (POMDPs), but these are generally hard to solve for larger real-life problems.
-For this reason, we are interested in ways of moddeling AM problems with the same expressive power as POMDPs, but where we can use the knowledge of what measurements do explicitely to make solving them easier. 
+For this reason, we are interested in ways of moddeling AM problems in a way that makes solving them easier.
 
 ## ACNO-MDPs and Act-then-measure
 
-...
+Prior work has focussed on active measure environments where all measurements are *complete* and *noiseless* {% cite DBLP:conf/nips/NamFB21 %}.
+In such settings, the 
