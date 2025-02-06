@@ -35,7 +35,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%93%82%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://mkrale.github.io/projects/1_project/">
+    <link rel="canonical" href="https://mkrale.github.io/projects/ActiveMeasuring/">
 
     <!-- Dark Mode -->
     
@@ -126,10 +126,12 @@ Or how often a drone should use it’s battery-draining GPS-system to keep an ac
 Problems that contain partial observability, as is the case here, are often modeled as <em>partially observable Markov decision processes</em> (POMDPs), but these are generally hard to solve for larger real-life problems.
 For this reason, we are interested in ways of moddeling AM problems in a way that makes solving them easier.</p>
 
-<h2 id="acno-mdps-and-act-then-measure">ACNO-MDPs and Act-then-measure</h2>
+<p>I currently have two papers related to active measuring:</p>
 
-<p>Prior work has focussed on active measure environments where all measurements are <em>complete</em> and <em>noiseless</em> (missing reference).
-In such settings, the</p>
+<ul>
+  <li>In our ICAPS 2023 paper, we propose the <strong>act-then-measure</strong> heuristic for finding (suboptimal) solutions for ACNO-MDPs, a subset of active measuring problems where measurements yield full state information. Based on this heuristic, we define a reinforcement learning method that outperforms existing methods.</li>
+  <li>In our AAAI 2024 paper (as based on my master thesis), we consider active measuring in a setting with model uncertainty. We extend the act-then-measure heuristic to this environment, and investigate the effect misspecification of the model uncertainty on the performance of our policy.</li>
+</ul>
 
           </article>
 
@@ -141,7 +143,7 @@ In such settings, the</p>
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2023 Merlijn  Krale. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+        © Copyright 2025 Merlijn  Krale. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
 
       </div>
     </footer>
