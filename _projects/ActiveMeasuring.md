@@ -2,7 +2,7 @@
 layout: page
 title: Active Measuring
 description: Solving partially observable environments with measuring actions
-img: assets/img/12.jpg
+img: assets/img/Magnified.jpg
 importance: 1
 category: work
 ---
@@ -15,7 +15,7 @@ All these questions can be formulated as *active measure* problems, or AM proble
 Problems that contain partial observability, as is the case here, are often modeled as *partially observable Markov decision processes* (POMDPs), but these are generally hard to solve for larger real-life problems.
 For this reason, we are interested in ways of moddeling AM problems in a way that makes solving them easier.
 
-## ACNO-MDPs and Act-then-measure
+I currently have two papers related to active measuring:
 
-Prior work has focussed on active measure environments where all measurements are *complete* and *noiseless* {% cite DBLP:conf/nips/NamFB21 %}.
-In such settings, the 
+* In our ICAPS 2023 paper, we propose the **act-then-measure** heuristic for finding (suboptimal) solutions for ACNO-MDPs, a subset of active measuring problems where measurements yield full state information. Based on this heuristic, we define a reinforcement learning method that outperforms existing methods.
+* In our AAAI 2024 paper (as based on my master thesis), we consider active measuring in a setting with model uncertainty. We extend the act-then-measure heuristic to this environment, and investigate the effect misspecification of the model uncertainty on the performance of our policy.
